@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(https://justrichest.com/wp-content/uploads/Most-Expensive-Sports-To-Compete.jpg);
+}
+
+header .container{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  min-height: 15vh;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 3rem;
+  margin: 0.5em 0.2em;
+}
+
+header .image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .image-wrapper img {
+  transition: all 2s;
+  width: 100px;
+  height: 100px;
+}
+
+header .image-wrapper img:hover {
+  transform: rotate(360deg);
+}
+
+header .search-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+header .search-wrapper input {
+  font-size: 1.2rem;
+  padding: 1em;
+  border: solid 2px #000;
+  border-radius: 20px;
+  color: blue;
+}
+
+header .search-wrapper input::placeholder {
+  color: black;
+}
+
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+  header h1 {
+    font-size: 6rem;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  display: row nowrap;
+  justify-content: space-around;
+}
+
+nav li {
+  font-size: 1.6rem;
+  padding: 1em;
+  background-color: rgb(55, 76, 200, 1);
+  width: 25%;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav li:hover {
+  background-color: yellowgreen;
+}
+
+main {
+  margin: 5% 10%;
+  padding: 5% 10%;
+  background-color: #fff;
+}
+
+main img {
+  margin: 20px;
+  transition: 1s;
+}
+
+main img:hover {
+  transform: scale(1.1);
+}
+
+main h2 {
+  font-size: 1.8rem;
+}
+
+main p {
+  font-size: 1.4rem;
+}
+
+.feedback input {
+  border-radius: 5px;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.feedback input{
+  margin: 2px;
+  padding: 2px;
+
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+footer {
+  background-color: #fff;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+}
+
+footer .contact {
+  display: flex;
+  flex-flow: column nowrap;
+  grid-row: 1 / 4;
+  grid-column: 2 / 6;
+}
+
+footer .social-media {
+	display: flex;
+	flex-flow: column nowrap;
+	grid-row: 1 / 4;
+	grid-column: 8/ 12;
+}
+
+footer .copyright {
+	text-align: center;
+	grid-row: 4 / 5;
+	grid-column: 4 / 10;
+}
